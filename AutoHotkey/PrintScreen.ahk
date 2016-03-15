@@ -131,6 +131,8 @@ global screenCapture_mouseSpeed := 2
 
 			;═════      • • •   { Setup }      ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════⌠¦•••s1⌡;
 
+				Send, {vk07}{RWin Up}
+
 				IfWinExist, %snippingTool_Widget_WindowClass%
 					WinClose, %snippingTool_Widget_WindowClass%
 
@@ -147,6 +149,8 @@ global screenCapture_mouseSpeed := 2
 				GetKeyState, shiftButton_State,   Shift, P
 				GetKeyState, controlButton_State, Ctrl,  P
 
+			;═════      • • •   { Set : PrintScreen Mode }      ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════⌠¦•••s1⌡;
+			
 				printSreenMode := "SnippingTool_clip"
 
 				If  ( shiftButton_State    = "D" )
@@ -161,34 +165,26 @@ global screenCapture_mouseSpeed := 2
 				And     ( controlButton_State = "D" )
 					printSreenMode := "Skitch_capture"
 
-			;═════      • • •   { Select : PrintScreen Mode }      ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════⌠¦•••s1⌡;
+			;═════      • • •   { Execute : PrintScreen Function }      ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════⌠¦•••s1⌡;
 
 				If ( printSreenMode = "SnippingTool_clip" )
-					{
-						SnippingTool_clip( monitorRight, monitorTop )
-						Send, {Blind}{RWin Up}
-					}
+					SnippingTool_clip( monitorRight, monitorTop )
 
 				Else If ( printSreenMode = "Skitch_clip" )
 					{
 						Run, %skitch_FilePath%
 						SnippingTool_clip( monitorRight, monitorTop )
-						Send, {Blind}{RWin Up}
 						Skitch_clip()
 					}
 
 				Else If ( printSreenMode = "SnippingTool_capture" )
 					{
 						SnippingTool_clip( monitorRight, monitorTop )
-						Send, {Blind}{RWin Up}
 						SnippingTool_capture( mouse_xPos, mouse_Ypos, monitorLeft, monitorTop, monitorRight, monitorBottom )
 					}
 
 				Else If ( printSreenMode = "Skitch_capture" )
-					{
-						Send, {Blind}{RWin Up}
-						Skitch_capture()
-					}
+					Skitch_capture()
 			}
 
 	Return
