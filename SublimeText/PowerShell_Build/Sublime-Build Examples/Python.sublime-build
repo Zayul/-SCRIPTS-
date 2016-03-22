@@ -1,13 +1,13 @@
 {
 	"selector":   "source.python",
-	"cmd":        [ "Powershell", "SublimeText_Builds.ps1", "Python_NoInput", "\"$file\"", "\"$file_name\"", "\"$file_base_name\"", "\"$file_path\"", "\"$project_base_name\"" ],
+	"cmd":        [ "PowerShell", "SublimeText_Builds.ps1", "Python_NoInput", "\"$file\"", "\"$file_name\"", "\"$file_base_name\"", "\"$file_path\"", "\"$project_base_name\"" ],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 
 	"variants":
 		[
 			{
 				"name": "Input",
-				"cmd":  [ "Powershell", "SublimeText_Builds.ps1", "Python_Input", "\"$file\"", "\"$file_name\"", "\"$file_base_name\"", "\"$file_path\"", "\"$project_base_name\"" ],
+				"cmd":  [ "PowerShell", "SublimeText_Builds.ps1", "Python_Input", "\"$file\"", "\"$file_name\"", "\"$file_base_name\"", "\"$file_path\"", "\"$project_base_name\"" ],
 			},
 		]
 }
