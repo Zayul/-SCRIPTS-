@@ -1,0 +1,12 @@
+[
+
+	{ "keys": ["ctrl+b"], "command": "dev_tools", "args": { "mode": "build" }  },
+
+	{ "keys": ["ctrl+shift+b"], "command": "dev_tools", "args": { "mode": "select_Build" }  },
+
+	{ "keys": ["escape"], "command": "dev_tools", "args": { "mode": "end_Build" },
+		"context": [ { "key": "panel_visible", "operator": "equal", "operand": true } ] },
+
+]
+
+
