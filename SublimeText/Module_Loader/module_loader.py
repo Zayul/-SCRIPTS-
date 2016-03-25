@@ -3,26 +3,26 @@ import imp, os, sys
 
 def load ( moduleDirectories, pluginGlobals ):
 
-	moduleExtensions  = [ "py" ] #▒▒▒  add extensions here to extend module support   ▒▒▒#
-	moduleLoader_Name = "module_loader"
-	modulePaths       = []
+  moduleExtensions  = [ "py" ] #▒▒▒  add extensions here to extend module support   ▒▒▒#
+  moduleLoader_Name = "module_loader"
+  modulePaths       = []
 
-	for path in sys.path:
-		if path.endswith ( "Sublime Text 3" + os.sep + "Packages" ):
-			packagesPath = path
-			break
+  for path in sys.path:
+    if path.endswith ( "Sublime Text 3" + os.sep + "Packages" ):
+      packagesPath = path
+      break
 
-	for directory in moduleDirectories:
-		modulePaths.append ( packagesPath + os.sep + directory )
+  for directory in moduleDirectories:
+    modulePaths.append ( packagesPath + os.sep + directory )
 
-	for index in range ( 0, 2 ): #▒▒▒  loads modules twice to ensure dependencies are updated  ▒▒▒#
-		for path in modulePaths:
-			for file in os.listdir ( path ):
-				for extension in moduleExtensions:
+  for index in range ( 0, 2 ): #▒▒▒  loads modules twice to ensure dependencies are updated  ▒▒▒#
+    for path in modulePaths:
+      for file in os.listdir ( path ):
+        for extension in moduleExtensions:
 
-					if file.endswith ( os.extsep + extension ):
-						moduleName = os.path.basename( file )[ : - len ( os.extsep + extension ) ]
+          if file.endswith ( os.extsep + extension ):
+            moduleName = os.path.basename( file )[ : - len ( os.extsep + extension ) ]
 
-						if moduleName != moduleLoader_Name:
-							fileObject, file, description = imp.find_module( moduleName, [ path ] )
-							pluginGlobals[ moduleName ] = imp.load_module ( moduleName, fileObject, file, description )
+            if moduleName != moduleLoader_Name:
+              fileObject, file, description = imp.find_module( moduleName, [ path ] )
+              pluginGlobals[ moduleName ] = imp.load_module ( moduleName, fileObject, file, description )
