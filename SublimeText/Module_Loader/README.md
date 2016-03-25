@@ -40,3 +40,4 @@ module_loader.load ( moduleDirectories, globals() )
 *( update directories accordingly )*
 
 ### Try out the [Demo Plugin](https://github.com/Enteleform/-SCRIPTS-/tree/master/SublimeText/Module_Loader/%5BDemo%5D) to see a working implementation of `module_loader`.
+*( it's the same plugin shown in the GIFs above )*
