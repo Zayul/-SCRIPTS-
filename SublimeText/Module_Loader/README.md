@@ -31,7 +31,7 @@ It also removes the need for explicit declaration of modules.&nbsp; Just list th
 
 ## IMPLEMENTATION
 
-To implement `module_loader`, just put a copy of `module_loader.py` in your `PluginName/Modules` directory and include these 3 lines in your plugin:
+To implement `module_loader`, just put a copy of `module_loader.py` in your `MyPlugin/Modules` directory and include these 3 lines in your plugin:
 ```
 from MyPlugin.Modules import module_loader
 moduleDirectories = [ "MyPlugin/Modules", "MyPlugin/MoreModules" ]
