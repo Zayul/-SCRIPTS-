@@ -7,8 +7,6 @@ class ProgressBarDemoCommand ( sublime_plugin.TextCommand ):
 
 		view = self.view
 
-		self.popupCSS = sublime.load_resource ( sublime.find_resources ( "ProgressBarDemo_ProgressBar.css" )[0] )
-
 		self.initialize_ProgressBar ( view )
 
 		for index in range ( 1, self.maxPercent + 1 ):
@@ -35,6 +33,7 @@ class ProgressBarDemoCommand ( sublime_plugin.TextCommand ):
 		self.progressBar_Progress_Color   = "#5A91BC"
 		self.progressBar_BorderColor      = "#000000"
 
+		self.popupCSS = sublime.load_resource ( sublime.find_resources ( "ProgressBarDemo_ProgressBar.css" )[0] )
 		self.progressBar_Width = int ( float ( self.popupWidth * 0.8 ) )
 		self.progressPercent   = 0
 
