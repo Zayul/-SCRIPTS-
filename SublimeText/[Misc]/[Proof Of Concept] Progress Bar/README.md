@@ -19,5 +19,4 @@ The implementation is pretty straightforward:
 ![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Progress%20Bar/Demo.gif)
 
 &nbsp;
-
 *( run the plugin by typing `Progress Bar Demo` @ the Command Palette )*
