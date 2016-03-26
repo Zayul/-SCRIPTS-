@@ -1,5 +1,4 @@
 import sublime, sublime_plugin
-import re
 import mdpopups
 
 class ProgressBarDemoCommand ( sublime_plugin.TextCommand ):
