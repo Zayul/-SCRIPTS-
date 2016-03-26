@@ -9,18 +9,16 @@ The implementation is pretty straightforward:
  * array entries up to the current `progressPercent` == `progress` color
  * array entries after the current `progressPercent` == `incomplete` color
  * if `progressPercent` == `100`, all array entries == `complete` color
-&nbsp;
 
------
+&nbsp;
 
 -----
 
 #Demo:
 
 ![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Progress%20Bar/Demo.gif)
-&nbsp;
 
------
+&nbsp;
 
 -----
 
