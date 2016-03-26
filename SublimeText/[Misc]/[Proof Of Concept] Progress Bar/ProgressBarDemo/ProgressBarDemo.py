@@ -3,77 +3,91 @@ import mdpopups
 
 class ProgressBarDemoCommand ( sublime_plugin.TextCommand ):
 
-    def run ( self, edit ):
+	def run ( self, edit ):
 
-        view = self.view
+		view = self.view
 
-        self.initialize_ProgressBar ( view )
+		self.initialize_ProgressBar ( view )
 
-        for index in range ( 1, self.maxPercent + 1 ):
-            sublime.set_timeout ( lambda: self.udpate_ProgressBar ( view ), self.updateFrequency * index )
+		for index in range ( 1, self.maxPercent + 1 ):
+			sublime.set_timeout ( lambda: self.udpate_ProgressBar ( view ), self.updateFrequency * index )
 
-    def initialize_ProgressBar ( self, view ):
+	def initialize_ProgressBar ( self, view ):
 
-        #▒▒▒  Text  ▒▒▒#
-        self.popUp_Label_InProgress = "PROGRESS:"
-        self.popUp_Label_Complete   = "COMPLETE!"
+		#▒▒▒  Text  ▒▒▒#
+		self.popUp_Label_InProgress = "PROGRESS:"
+		self.popUp_Label_Complete   = "COMPLETE!"
 
-        #▒▒▒  Progress Tracking  ▒▒▒#
-        self.maxPercent      = 100
-        self.updateFrequency = 50 # In Milliseconds
+		#▒▒▒  Progress Tracking  ▒▒▒#
+		self.maxPercent      = 100
+		self.updateFrequency = 50 # In Milliseconds
 
-        #▒▒▒  Dimensions  ▒▒▒#
-        self.popupWidth         = 500
-        self.popupMaxHeight     = 500
-        self.progressBar_Height = 21
+		#▒▒▒  Dimensions  ▒▒▒#
+		self.popupWidth         = 500
+		self.popupMaxHeight     = 500
+		self.progressBar_Height = 21
 
-        #▒▒▒  Colors  ▒▒▒#
-        self.progressBar_Incomplete_Color = "#0B121A"
-        self.progressBar_Complete_Color   = "#57BB80"
-        self.progressBar_Progress_Color   = "#5A91BC"
-        self.progressBar_BorderColor      = "#000000"
+		#▒▒▒  Colors  ▒▒▒#
+		self.progressBar_Incomplete_Color = "#0B121A"
+		self.progressBar_Complete_Color   = "#57BB80"
+		self.progressBar_Progress_Color   = "#5A91BC"
+		self.progressBar_BorderColor      = "#000000"
 
-        self.popupCSS = sublime.load_resource ( sublime.find_resources ( "ProgressBarDemo_ProgressBar.css" )[0] )
-        self.progressBar_Width = int ( float ( self.popupWidth * 0.8 ) )
-        self.progressPercent   = 0
+		self.popupCSS = sublime.load_resource ( sublime.find_resources ( "ProgressBarDemo_ProgressBar.css" )[0] )
+		self.progressBar_Width = int ( float ( self.popupWidth * 0.8 ) )
+		self.progressPercent   = 0
 
-        mdpopups.show_popup \
-            ( view, "", True, self.popupCSS, 0, -1, self.popupWidth, self.popupMaxHeight )
-        # ( view, content, markdown, css, flags, location, width, height )
+		mdpopups.show_popup (
+			view,               # view
+			"",                 # content
+			True,               # markdown
+			self.popupCSS,      # css
+			0,                  # flags
+			-1,                 # location
+			self.popupWidth,    # width
+			self.popupMaxHeight # height
+		)
 
-    def udpate_ProgressBar ( self, view ):
+	def udpate_ProgressBar ( self, view ):
 
-        self.progressPercent   += 1
-        progressPercent_String  = str ( self.progressPercent ) + "%"
-        progressBar_Colors      = []
+		self.progressPercent   += 1
+		progressPercent_String  = str ( self.progressPercent ) + "%"
+		progressBar_Colors      = []
 
-        popUp_Label = self.popUp_Label_InProgress
+		popUp_Label = self.popUp_Label_InProgress
 
-        for index in range ( 0, self.maxPercent ):
-            if  index <= self.progressPercent \
-            and self.progressPercent < self.maxPercent:
-                progressBar_Colors.append ( self.progressBar_Progress_Color )
-            elif index > self.progressPercent \
-            and  self.progressPercent < self.maxPercent:
-                progressBar_Colors.append ( self.progressBar_Incomplete_Color )
-            elif self.progressPercent >= self.maxPercent:
-                progressBar_Colors.append ( self.progressBar_Complete_Color )
-                popUp_Label = self.popUp_Label_Complete
+		for index in range ( 0, self.maxPercent ):
+			if  index <= self.progressPercent \
+			and self.progressPercent < self.maxPercent:
+				progressBar_Colors.append ( self.progressBar_Progress_Color )
+			elif index > self.progressPercent \
+			and  self.progressPercent < self.maxPercent:
+				progressBar_Colors.append ( self.progressBar_Incomplete_Color )
+			elif self.progressPercent >= self.maxPercent:
+				progressBar_Colors.append ( self.progressBar_Complete_Color )
+				popUp_Label = self.popUp_Label_Complete
 
-        progressBar = mdpopups.color_box \
-            ( progressBar_Colors, self.progressBar_BorderColor, None, self.progressBar_Height, self.progressBar_Width, 0, 4, self.maxPercent )
-        # ( colors, border, border2, height, width, border_size, check_size, max_colors )
+		progressBar = mdpopups.color_box (
+			progressBar_Colors,           # [ colors ]
+			self.progressBar_BorderColor, # border1_color
+			None,                         # border2_color
+			self.progressBar_Height,      # height
+			self.progressBar_Width,       # width
+			0,                            # border_size
+			4,                            # check_size
+			self.maxPercent               # max_colors
+		)
 
-        space     = "&nbsp;"
-        blankLine = space + "\n"
-        h5        = "#####"
-        h6        = "######"
+		space     = "&nbsp;"
+		blankLine = space + "\n"
+		h5        = "#####"
+		h6        = "######"
 
-        markdown_PopUp_Text =                  \
-                h5 + popUp_Label + "\n"            \
-            + blankLine                          \
-            + h6 + progressPercent_String + "\n" \
-            + progressBar
+		markdown_PopUp_Text =                  \
+				h5 + popUp_Label + "\n"            \
+			+ blankLine                          \
+			+ h6 + progressPercent_String + "\n" \
+			+ progressBar
 
-        mdpopups.update_popup ( view, markdown_PopUp_Text, True, self.popupCSS )
+		mdpopups.update_popup ( view, markdown_PopUp_Text, True, self.popupCSS )
 
