@@ -4,7 +4,6 @@ I've been meaning to work with [__mdpopups__](http://facelessuser.github.io/subl
 The implementation is pretty straightforward:
 
 * a loop with incrementing delay times that calls `sublime.set_timeout`
-*( Thanks @kingkeith for helping me out with it @ [__This Thread__ ](https://forum.sublimetext.com/t/retrieving-inserted-and-deleted-text/18697))* &nbsp; :grin:
 
 * an array of colors for `mdpopups.color_box` that is populated with 100 values
  * array entries up to the current `progressPercent` == `progress` color
