@@ -20,11 +20,4 @@ The implementation is pretty straightforward:
 
 &nbsp;
 
------
-
-#Code:
-
-# [@ GitHub](https://github.com/Enteleform/-SCRIPTS-/tree/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Progress%20Bar)
-
 *( run the plugin by typing `Progress Bar Demo` @ the Command Palette )*
-&nbsp;
