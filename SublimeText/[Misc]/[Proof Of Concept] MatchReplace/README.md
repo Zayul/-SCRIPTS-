@@ -43,4 +43,4 @@ To use MatchReplace:
 * open a 2-group window layout using <kbd>Shift + Alt + 2</kbd>
 * move the document you want as the SOURCE to the left group
 * move the document you want to MATCH with the source to the right group
-* open the Command Palette with <kbd>Ctrl + Shift + P</kbd> and run the "Match Replace: Demo" command
+* open the Command Palette with <kbd>Ctrl + Shift + P</kbd> and run the `Match Replace: Demo` command
