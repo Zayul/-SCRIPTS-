@@ -22,7 +22,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 The demo is written to work with single tier JSON files, but can be adjusted as necessary.
 
-`RegEx` patterns to precede & follow match keys are:
+`RegEx` patterns to precede & follow `replacementKeys are:
 
 * queryPrefix
 * querySuffix
@@ -49,6 +49,6 @@ To use MatchReplace:
 
 ###Note:
 
-Match keys must be an __exact__ match at both documents *( leading whitespace is ignored )*.
+`replacementKeys` must be an __exact__ match at both documents *( leading whitespace is ignored )*.
 
 If you want to allow for variation within the match keys, you will need to implement an additional layer of `RegEx` processing.
