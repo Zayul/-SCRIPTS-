@@ -51,4 +51,4 @@ To use MatchReplace:
 
 `replacementKeys` must be an __exact__ match at both documents *( leading whitespace is ignored )*.
 
-If you want to allow for variation within the match keys, you will need to implement an additional layer of `RegEx` processing.
+If you want to allow for variation within the replacementKeys, you will need to implement an additional layer of `RegEx` processing.
