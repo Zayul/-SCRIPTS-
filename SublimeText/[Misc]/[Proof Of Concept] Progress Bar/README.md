@@ -1,6 +1,7 @@
 I've been meaning to work with [__mdpopups__](http://facelessuser.github.io/sublime-markdown-popups/) for a while, and decided to give it a shot when I came across this [__StackOverflow question__](http://stackoverflow.com/questions/36205245/progress-bar-in-sublime-text-with-python) asking how to implement a progress bar.
 
 &nbsp;
+
 The implementation is pretty straightforward:
 
 * a loop with incrementing delay times that calls `sublime.set_timeout`
