@@ -8,6 +8,8 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 #Implementation:
 
+&nbsp;
+
 * get active views of each group in a 2 group window
 * find RegEx matches of a user-defined array of keys which will be matched at both documents
 * store value regions of both documents, and string values of the source document
