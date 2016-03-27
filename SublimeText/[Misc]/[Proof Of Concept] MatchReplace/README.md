@@ -24,8 +24,8 @@ The demo is written to work with single tier `JSON` files, but can be adjusted a
 
 `RegEx` patterns to precede & follow `replacementKeys` are:
 
-* queryPrefix
-* querySuffix
+* `queryPrefix`
+* `querySuffix`
 
 &nbsp;
 
