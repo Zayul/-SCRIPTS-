@@ -2,7 +2,13 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 &nbsp;
 
-Implementation:
+-----
+
+#Demo:
+
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20MatchReplace/Demo.gif)
+
+#Implementation:
 
 * get active views of each group in a 2 group window
 * find RegEx matches of a user-defined array of keys which will be matched at both documents
@@ -11,12 +17,6 @@ Implementation:
 * iterate over regions at the target document, replacing all matched values from the source
 
 &nbsp;
-
------
-
-#Demo:
-
-![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20MatchReplace/Demo.gif)
 
 #Usage:
 
