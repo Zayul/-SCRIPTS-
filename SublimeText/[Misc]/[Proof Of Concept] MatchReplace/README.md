@@ -33,6 +33,8 @@ RegEx patterns to precede & follow keys are:
 
 #Usage:
 
+&nbsp;
+
 To use MatchReplace:
 
 * copy the plugin folder to your `Packages` directory
