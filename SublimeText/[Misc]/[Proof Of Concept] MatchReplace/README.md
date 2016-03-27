@@ -1,12 +1,10 @@
 Written in response to this [__StackOverflow question__](http://stackoverflow.com/questions/36242643/replace-the-matched-selections-from-another-file) asking how to replace matched selections between a source & target file.
 
-&nbsp;
-
------
-
 #Demo:
 
 ![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20MatchReplace/Demo.gif)
+
+&nbsp;
 
 #Implementation:
 
