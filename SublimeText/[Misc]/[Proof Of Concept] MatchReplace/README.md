@@ -13,7 +13,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 &nbsp;
 
 * get active views of each group in a 2 group window
-* find RegEx matches of a user-defined array of keys which will be matched at both documents
+* find `RegEx` matches of a user-defined array of keys which will be matched at both documents
 * store value regions of both documents, and string values of the source document
 * sort stored values by region
 * iterate over regions at the target document, replacing all matched values from the source
@@ -22,7 +22,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 The demo is written to work with single tier JSON files, but can be adjusted as necessary.
 
-RegEx patterns to precede & follow keys are:
+`RegEx` patterns to precede & follow match keys are:
 
 * queryPrefix
 * querySuffix
@@ -44,3 +44,11 @@ To use MatchReplace:
 * move the document you want as the SOURCE to the left group
 * move the document you want to MATCH with the source to the right group
 * open the Command Palette with <kbd>Ctrl + Shift + P</kbd> and run the `Match Replace: Demo` command
+
+&nbsp;
+
+###Note:
+
+Match keys must be an __exact__ match at both documents *( leading whitespace is ignored )*.
+
+If you want to allow for variation within the match keys, you will need to implement an additional layer of `RegEx` processing.
