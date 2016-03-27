@@ -15,7 +15,7 @@ Implementation:
 
 #Demo:
 
-![Demo]()
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20MatchReplace/Demo.gif)
 
 #Usage:
 
