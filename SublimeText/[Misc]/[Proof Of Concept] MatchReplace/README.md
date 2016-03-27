@@ -14,8 +14,10 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 * sort stored values by region
 * iterate over regions at the target document, replacing all matched values from the source
 
+&nbsp;
+
 The demo is written to work with single tier JSON files, but can be adjusted as necessary.
-RegEx patterns to preceded & follow keys are:
+RegEx patterns to precede & follow keys are:
 
 * queryPrefix
 * querySuffix
