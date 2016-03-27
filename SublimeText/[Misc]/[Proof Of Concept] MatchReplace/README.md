@@ -19,7 +19,7 @@ RegEx patterns to preceded & follow keys are:
 
 * queryPrefix
 * querySuffix
-* 
+
 &nbsp;
 
 #Usage:
@@ -29,7 +29,6 @@ To use MatchReplace:
 * copy the plugin folder to your `Packages` directory
 * edit the `replacementKeys` array in the `run` function to suit your match+replace needs
 * save the plugin & restart SublimeText
-
 * open a 2-group window layout using <kbd>Shift + Alt + 2</kbd>
 * move the document you want as the SOURCE to the left group
 * move the document you want to MATCH with the source to the right group
