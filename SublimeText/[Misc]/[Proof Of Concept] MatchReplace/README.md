@@ -21,6 +21,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 &nbsp;
 
 The demo is written to work with single tier JSON files, but can be adjusted as necessary.
+
 RegEx patterns to precede & follow keys are:
 
 * queryPrefix
