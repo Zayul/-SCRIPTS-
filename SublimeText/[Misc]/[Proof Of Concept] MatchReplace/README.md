@@ -1,6 +1,7 @@
 Written in response to this [__StackOverflow question__](http://stackoverflow.com/questions/36242643/replace-the-matched-selections-from-another-file) asking how to replace matched selections between a source & target file.
 
 &nbsp;
+
 Implementation:
 
 * get active views of each group in a 2 group window
