@@ -26,6 +26,7 @@ Written in response to this [__SublimeText forum question__](https://forum.subli
 
 To use `csvTemplate`:
 
+* copy the plugin folder to your `Packages` directory
 * edit the `csvFile`, `delimiter`, & `row[ "___field_name___" ]` variables to match your `CSV` file.
 * edit the `templateString` statements to match your desired formatting
 * save the plugin & restart SublimeText
