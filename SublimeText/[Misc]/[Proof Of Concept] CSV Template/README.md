@@ -2,7 +2,7 @@ Written in response to this [__SublimeText forum question__](https://forum.subli
 
 #Demo:
 
-![Demo]()
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20CSV%20Template/Demo.gif)
 
 &nbsp;
 
