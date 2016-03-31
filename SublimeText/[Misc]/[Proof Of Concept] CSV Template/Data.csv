@@ -1,0 +1,5 @@
+Template,Item,Item_Colour,Item_wt,Grows_in,Salad,Raw
+fruit,Apples,Red_Green,300,Snowy
+fruit,Orange,Orange,250,Sunny
+fruit,Grape,Violet,25,Sunny
+Vegetable,Carrot,Red,100,Hilly,Yes,Yes
