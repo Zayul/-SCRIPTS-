@@ -1,4 +1,5 @@
-Created for: [Auto reloading of python module files used by plugin](https://forum.sublimetext.com/t/auto-reloading-of-python-module-files-used-by-plugin/5321)
+### Issue Thread:
+[**Auto reloading of python module files used by plugin**](https://forum.sublimetext.com/t/auto-reloading-of-python-module-files-used-by-plugin/5321)
 &nbsp;
 
 -----
