@@ -1,0 +1,7 @@
+[
+	{
+		"keys": ["shift+alt+/"],
+		"command": "parkour_v1",
+		"args":	{"MODE": "toggle_InlineComment",},
+	},
+]

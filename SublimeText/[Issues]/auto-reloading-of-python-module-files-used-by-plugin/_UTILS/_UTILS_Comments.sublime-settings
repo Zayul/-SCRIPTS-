@@ -1,0 +1,19 @@
+{ "settings": {
+
+// [ { (     Start      ) } ]≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈⌠¦b1⌡//
+
+	"fileType_CommentCharacters":
+		{
+			"__DEFAULT__": { "commentPrefix": "☀"  , "commentSuffix": "☀"  },
+			"ahk":         { "commentPrefix": ";"  , "commentSuffix": ";"  },
+			"batch":       { "commentPrefix": "::" , "commentSuffix": "::" },
+			"java":        { "commentPrefix": "//" , "commentSuffix": "//" },
+			"py":          { "commentPrefix": "#"  , "commentSuffix": "#"  },
+			"todo":        { "commentPrefix": "#"  , "commentSuffix": "#"  },
+			"txt":         { "commentPrefix": "#"  , "commentSuffix": "#"  },
+			"xys":         { "commentPrefix": "/*" , "commentSuffix": "*/" },
+		},
+
+// [ { (     End      ) } ]≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈⌠¦b1⌡//
+
+} }
