@@ -1,0 +1,64 @@
+[
+
+//▓▓▓▓▓      [1] Initialize MacroScript      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓//
+
+	{ "command": "macro_script", "args": { "MODE":
+	"initialize_MacroScript" } },
+
+//▓▓▓▓▓      [2] Copy Text to New File      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓//
+
+	{ "command": "macro_script", "args": { "MODE":
+	"select_All" } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"edit_Copy" } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"file_New" } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"edit_Paste" } },
+
+//▓▓▓▓▓      [3] Extract Target Text      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓//
+
+	{ "command": "macro_script", "args": { "MODE":
+	"find_Instance",
+			"QUERY":         "___TARGET_SECTION_START___",
+			"COUNT":         1,
+			"REGEX_ENABLED": false,
+			"IGNORE_CASE":   false } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"move_Line_Down",
+			"COUNT": 2 } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"delete_Document_Start" } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"find_Instance",
+			"QUERY":         "___TARGET_SECTION_END___",
+			"COUNT":         1,
+			"REGEX_ENABLED": false,
+			"IGNORE_CASE":   false } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"move_Line_Up",
+			"COUNT": 2 } },
+
+	{ "command": "macro_script", "args": { "MODE":
+	"delete_Document_End" } },
+
+//▓▓▓▓▓      [4] Replace "def"      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓//
+
+//// this section causes the error when working with a new view ////
+//// if section 2 is commented out, no error will occur ////
+
+	{ "command": "macro_script", "args": { "MODE":
+	"replace_All",
+			"QUERY":         "def",
+			"TEXT":          "__REPLACED__",
+			"REGEX_ENABLED": false,
+			"IGNORE_CASE":   false } },
+
+]
