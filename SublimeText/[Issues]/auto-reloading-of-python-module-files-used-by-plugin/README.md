@@ -6,8 +6,6 @@ All non-essential functions have been omitted for testing purposes.
 
 -----
 
-&nbsp;
-
 Below is a demonstration of the inline comment function, which is executed with the following keybinding:  
 <kbd>shift + alt + /</kbd>
 
