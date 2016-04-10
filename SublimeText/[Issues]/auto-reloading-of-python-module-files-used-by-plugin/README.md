@@ -20,4 +20,4 @@ The primary purpose of the current code is to implement dynamic variable loading
 Below is a demonstration of the inline comment function, which is executed with the following keybinding:  
 <kbd>shift + alt + /</kbd>
 
-![Demo](https://raw.githubusercontent.com/Enteleform/ST_Parkour/master/Inline%20Comment%20Demo.gif)
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BIssues%5D/auto-reloading-of-python-module-files-used-by-plugin/Inline%20Comment%20Demo.gif)
