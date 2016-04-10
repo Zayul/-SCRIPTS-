@@ -1,7 +1,5 @@
 **Issue Thread:** [**Auto reloading of python module files used by plugin**](https://forum.sublimetext.com/t/auto-reloading-of-python-module-files-used-by-plugin/5321)
 
-&nbsp;
-
 This is a [**MVCE**](http://stackoverflow.com/help/mcve) version of Parkour.
 All non-essential functions have been omitted for testing purposes.
 
