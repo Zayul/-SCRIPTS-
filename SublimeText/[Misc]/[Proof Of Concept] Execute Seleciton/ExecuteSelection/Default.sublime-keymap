@@ -1,0 +1,7 @@
+[
+	{
+		"keys": ["ctrl+shift+alt+super+e"],
+		"command": "execute_selection",
+	},
+]
+
