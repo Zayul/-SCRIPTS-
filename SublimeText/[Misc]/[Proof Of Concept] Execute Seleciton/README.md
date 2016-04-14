@@ -2,7 +2,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 #Demo:
 
-![Demo]()
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Execute%20Seleciton/Demo.gif)
 
 &nbsp;
 
@@ -27,5 +27,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 To use ExecuteSelection:
 
-* use the included keybinding:
+* copy the plugin folder to your `Packages` directory
+* select text to execute
+* execute using the included keybinding:
 <kbd>Ctrl + Shift + Alt + Super + E</kbd>
