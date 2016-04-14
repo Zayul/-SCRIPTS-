@@ -14,7 +14,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 * clean selected text of newlines & replace with semicolons
 
-* pass cleaned text as an argument to a simple `exec` script via:
+* pass cleaned text as an argument to a simple `exec` script via:  
 `subprocess.Popen` > `cmd` > `python`
 
 &nbsp;
@@ -29,5 +29,5 @@ To use ExecuteSelection:
 
 * copy the plugin folder to your `Packages` directory
 * select text to execute
-* execute using the included keybinding:
+* execute using the included keybinding:  
 <kbd>Ctrl + Shift + Alt + Super + E</kbd>
