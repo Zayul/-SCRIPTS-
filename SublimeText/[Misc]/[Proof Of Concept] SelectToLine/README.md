@@ -30,5 +30,5 @@ To use SelectToLine:
 * copy the plugin folder to your `Packages` directory
 * restart SublimeText
 * execute the command via the included:
- * **key-binding**: <kbd>Ctrl + Shift + Alt + L</kbd>
- * **command palette entry**: `Select To Line`
+ * key-binding: <kbd>Ctrl + Shift + Alt + L</kbd>
+ * command palette entry: `Select To Line`
