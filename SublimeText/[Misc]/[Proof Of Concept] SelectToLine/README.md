@@ -4,11 +4,9 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 ![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20SelectToLine/Demo.gif)
 
-&nbsp;
-
 -----
 
-## Features:
+# Features:
 
 * works bi-directionally
 * respects the current selection
