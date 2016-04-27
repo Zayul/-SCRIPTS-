@@ -18,8 +18,6 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 #Implementation:
 
-&nbsp;
-
 * verify single selection
 * get user input for new point to select until
 * verify current selection vs new selection positions
@@ -30,10 +28,6 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 -----
 
 #Usage:
-
-&nbsp;
-
-To use SelectToLine:
 
 * copy the plugin folder to your `Packages` directory
 * restart SublimeText
