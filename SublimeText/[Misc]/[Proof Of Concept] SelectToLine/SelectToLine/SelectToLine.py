@@ -30,7 +30,7 @@ class SelectToLineCommand( sublime_plugin.TextCommand ):
 			selectionEnd   = self.view.line( selectionEnd_Row ).b
 		elif selectionEnd_Row < currentSelection.a:
 			selectionStart = currentSelection.b
-			selectionEnd = self.view.line( selectionEnd_Row ).a
+			selectionEnd   = self.view.line( selectionEnd_Row ).a
 
 		newSelection = sublime.Region ( selectionStart, selectionEnd )
 
