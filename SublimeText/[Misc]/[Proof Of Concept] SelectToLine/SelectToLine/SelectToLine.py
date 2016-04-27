@@ -20,7 +20,7 @@ class SelectToLineCommand( sublime_plugin.TextCommand ):
 	def get_LineNumber( self, userInput ):
 
 		lineToRow_Offset = 1
-		row = int ( userInput ) - lineToRow_Offset
+		row = int( userInput ) - lineToRow_Offset
 		selectionEnd_Row = self.view.text_point( row, 0 )
 
 		currentSelection = self.currentSelection
@@ -32,7 +32,7 @@ class SelectToLineCommand( sublime_plugin.TextCommand ):
 			selectionStart = currentSelection.b
 			selectionEnd   = self.view.line( selectionEnd_Row ).a
 
-		newSelection = sublime.Region ( selectionStart, selectionEnd )
+		newSelection = sublime.Region( selectionStart, selectionEnd )
 
 		self.view.selection.clear()
 		self.view.selection.add( newSelection )
