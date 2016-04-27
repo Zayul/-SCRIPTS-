@@ -1,3 +1,5 @@
+import sublime, sublime_plugin
+
 class SelectToLineCommand( sublime_plugin.TextCommand ):
 
 	def run( self, edit ):
