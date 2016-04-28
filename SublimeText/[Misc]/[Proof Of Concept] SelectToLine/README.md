@@ -10,7 +10,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 # Features:
 
-* works bi-directionally
+* works bidirectionally
 * respects the current selection
 * only executes if there is a single selection
 
