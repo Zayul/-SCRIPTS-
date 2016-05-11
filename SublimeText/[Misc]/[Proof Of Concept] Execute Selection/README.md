@@ -2,7 +2,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 #Demo:
 
-![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Execute%20Seleciton/Demo.gif)
+![Demo](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/SublimeText/%5BMisc%5D/%5BProof%20Of%20Concept%5D%20Execute%20Selection/Demo.gif)
 
 &nbsp;
 
