@@ -10,7 +10,7 @@ Written in response to this [__StackOverflow question__](http://stackoverflow.co
 
 # Features:
 
-* bidirectional copy & cut commands ( *from active document to inactive document, works on either view* )
+* bidirectional `copy` & `cut` commands ( *from active document to inactive document, works on either view* )
 * selects & scrolls to inserted text @ inactive document
 * only executes if there are exactly 2 view groups
 
