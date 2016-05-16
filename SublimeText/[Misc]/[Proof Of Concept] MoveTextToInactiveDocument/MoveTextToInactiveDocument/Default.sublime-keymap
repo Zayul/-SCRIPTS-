@@ -1,0 +1,15 @@
+[
+
+	{
+		"keys": [ "ctrl+super+c" ],
+		"command": "move_text_to_inactive_document",
+		"args":	{ "MODE": "Copy" }
+	},
+
+	{
+		"keys": [ "ctrl+super+x" ],
+		"command": "move_text_to_inactive_document",
+		"args":	{ "MODE": "Cut" }
+	},
+
+]
