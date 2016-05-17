@@ -42,10 +42,10 @@ class MoveTextToInactiveDocumentCommand( sublime_plugin.TextCommand ):
 			regionText     = activeDocument.substr( region ) + LINE_BREAK
 			insertionPoint = inactiveDocument.size()
 
+			inactiveDocument.insert( edit, insertionPoint, regionText )
+
 			if MODE.lower() == "cut":
 				activeDocument.erase( edit, region )
-
-			inactiveDocument.insert( edit, insertionPoint, regionText )
 
 		#■■■  Select & Scroll To Inserted Text  ■■■#
 
