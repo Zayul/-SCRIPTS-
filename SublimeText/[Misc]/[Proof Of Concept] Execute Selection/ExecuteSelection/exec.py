@@ -1,4 +1,4 @@
 import sys
 
-exec ( sys.argv[1] )
+exec( sys.argv[1] )
 
