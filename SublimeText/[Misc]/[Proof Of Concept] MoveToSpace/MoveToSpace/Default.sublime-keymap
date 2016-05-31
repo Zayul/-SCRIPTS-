@@ -1,0 +1,15 @@
+[
+
+	{
+		"keys":    [ "ctrl+shift+alt+super+=" ],
+		"command": "move_to_space",
+		"args":    { "mode": "forward" },
+	},
+
+	{
+		"keys":    [ "ctrl+shift+alt+super+-" ],
+		"command": "move_to_space",
+		"args":    { "mode": "backward" },
+	},
+
+]
