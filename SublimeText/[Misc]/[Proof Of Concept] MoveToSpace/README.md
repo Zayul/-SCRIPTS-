@@ -1,1 +1,1 @@
-Written in response to this [__StackOverflow question__]http://stackoverflow.com/questions/37533545/sublime-text-2-key-bound-commands-for-jumping-to-next-and-previous-space) asking how to move to [ previous | next ] space characters.
+Written in response to this [__StackOverflow question__](http://stackoverflow.com/questions/37533545/sublime-text-2-key-bound-commands-for-jumping-to-next-and-previous-space) asking how to move to [ previous | next ] space characters.
