@@ -15,8 +15,6 @@ directories.Insert( "C:\Users" )
 
 global gui_Width  := 200
 global gui_Height := 100
-global listbox_Width  := gui_Width - 20
-global listbox_Height := gui_Height - 6
 
 ;▓▓▓▓▓║     Init     ║▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓⌠¦g1⌡;
 
@@ -33,6 +31,9 @@ global fileDialog_Class   := "#32770"
 global fileExplorer_Class := "CabinetWClass"
 GroupAdd, appGroup, ahk_class #32770
 GroupAdd, appGroup, ahk_class CabinetWClass
+
+global listbox_Width  := gui_Width - 20
+global listbox_Height := gui_Height - 6
 
 build_GUI()
 
