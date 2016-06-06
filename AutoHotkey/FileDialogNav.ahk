@@ -94,6 +94,7 @@ send_SelectedDirectory(){
 	ControlFocus, %directoryBar%, ahk_id %appWindow%
 	Sleep, 10
 	Send, {Space}
+	Sleep, 10
 	ControlSetText, %directoryField%, %selectedDirectory%, ahk_id %appWindow%
 	Sleep, 10
 	Send, {Enter}
