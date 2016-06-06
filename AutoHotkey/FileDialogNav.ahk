@@ -63,10 +63,7 @@ build_GUI(){
 	Gui directoryGUI: Hide
 }
 
-load_GUI(){
-
-	appWindow := WinExist( "A" )
-	WinGetClass, appClass, ahk_id %appWindow%
+show_GUI(){
 
 	CoordMode, Mouse
 	MouseGetPos, mouse_xPos, mouse_yPos
@@ -114,13 +111,15 @@ on_Selection:
 #IfWinActive, ahk_group appGroup
 
 	`::
-		load_GUI()
+		appWindow := WinExist( "A" )
+		WinGetClass, appClass, ahk_id %appWindow%
+		show_GUI()
 		return
 
 #IfWinActive, ahk_group directoryGUI_Group
 
 	`::
-		load_GUI()
+		show_GUI()
 		return
 
 	Enter::
