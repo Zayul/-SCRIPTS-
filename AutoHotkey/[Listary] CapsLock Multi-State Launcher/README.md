@@ -1,5 +1,5 @@
 
-This script launches Listary's fuzzy search with various <kbd>CapsLock</kbd> states.
+This script launches Listary's commands with various <kbd>CapsLock</kbd> states.
 
 ```
 • Single Press: launch fuzzy search
