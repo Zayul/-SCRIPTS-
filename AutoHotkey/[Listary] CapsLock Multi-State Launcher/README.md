@@ -1,4 +1,4 @@
-Add this @ your `AHK` hotkeys file:
+### @ `MyHotkeys.ahk`:
 
 ```AutoHotkey
 $CapsLock::
@@ -28,11 +28,13 @@ $CapsLock::
 
 Return
 ```
+
 &nbsp;
 
 -----
 
 &nbsp;
-Add these settings @ Listary:
+
+### @ `Listary > Settings`:
 
 ![Listary Settings](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/AutoHotkey/%5BListary%5D%20CapsLock%20Multi-State%20Launcher/Hotkey%20Settings.PNG)
