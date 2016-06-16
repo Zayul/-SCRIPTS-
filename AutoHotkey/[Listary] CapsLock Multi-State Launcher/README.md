@@ -1,5 +1,5 @@
 
-This script launches Listary's fuzzy search with various `CapsLock` states.
+This script launches Listary's fuzzy search with various <kbd>CapsLock</kbd> states.
 
 ```
 • Single Press: launch fuzzy search
@@ -7,6 +7,7 @@ This script launches Listary's fuzzy search with various `CapsLock` states.
 • Long Press:   currently does nothing, but you can add any custom action
 ```
 
+**Note:** The `CapsLock` default function can still be accessed via <kbd>Shift + CapsLock</kbd>, kbd>Ctrl + CapsLock</kbd>, etc.
 &nbsp;
 
 -----
