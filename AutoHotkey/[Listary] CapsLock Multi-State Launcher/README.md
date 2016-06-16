@@ -1,8 +1,11 @@
+
 This script launches Listary's fuzzy search with various `CapsLock` states.
 
-* Single Press: launch fuzzy search
-* Double Press: launch user menu
-* Long Press:   currently does nothing, but you can add any custom action
+```
+• Single Press: launch fuzzy search
+• Double Press: launch user menu
+• Long Press:   currently does nothing, but you can add any custom action
+```
 
 &nbsp;
 
