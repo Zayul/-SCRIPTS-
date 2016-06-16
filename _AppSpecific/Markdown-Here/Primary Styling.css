@@ -60,10 +60,10 @@ a {
 
 hr {
 	margin-top: 12px;
-  border-top: 1px solid #E0E5EA;
-  border-bottom-style: hidden;
-  border-left-style:   hidden;
-  border-right-style:  hidden;
+	border-top: 1px solid #E0E5EA;
+	border-bottom-style: hidden;
+	border-left-style:   hidden;
+	border-right-style:  hidden;
 }
 
 /*▒▒▒  Paragraphs  ▒▒▒*/
@@ -126,11 +126,11 @@ dl dd {
 
 blockquote, q {
 	overflow: auto;
-	border-left: 4px solid #FFEB8E;
+	border-left: 4px solid #80AACC;
 	padding: 1.1em 0 0.01em 1.1em;
 	line-height: 1.3em;
-	background: #FFF8DC;
-	color: #242729;
+	background: #E0EAEF;
+	color: #375C7B;
 	quotes: none;
 }
 
