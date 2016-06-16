@@ -59,9 +59,11 @@ a {
 /*▒▒▒  Dividers  ▒▒▒*/
 
 hr {
-	border-style: solid;
-	border-width: 1px;
-	color: #ECEFF3;
+	margin-top: 12px;
+  border-top: 1px solid #E0E5EA;
+  border-bottom-style: hidden;
+  border-left-style:   hidden;
+  border-right-style:  hidden;
 }
 
 /*▒▒▒  Paragraphs  ▒▒▒*/
@@ -139,7 +141,7 @@ blockquote::before, blockquote::after, q::before, q::after {
 /*▒▒▒  Headers  ▒▒▒*/
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 1.3em 0 1em;
+	margin: 2em 0 1em;
 	padding: 0;
 	font-weight: bold;
 }
