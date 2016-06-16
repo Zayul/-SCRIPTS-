@@ -1,3 +1,5 @@
+Add this @ your `AHK` hotkeys file:
+
 ```AutoHotkey
 $CapsLock::
 
@@ -11,12 +13,12 @@ $CapsLock::
 	Else{
 		KeyWait, CapsLock, D T0.15
 
-		;▒▒▒  Single Press  ▒▒▒;
+		;▒▒▒  Single Press ( Launch Fuzzy Search )  ▒▒▒;
 		If (ErrorLevel){
 			Send, ^+!#{F11}
 		}
 
-		;▒▒▒  Double Press  ▒▒▒;
+		;▒▒▒  Double Press ( Launch Menu )  ▒▒▒;
 		Else{
 			Send, ^+!#{F12}
 		}
@@ -26,3 +28,11 @@ $CapsLock::
 
 Return
 ```
+&nbsp;
+
+-----
+
+&nbsp;
+Add these settings @ Listary:
+
+![Listary Settings](https://raw.githubusercontent.com/Enteleform/-SCRIPTS-/master/AutoHotkey/%5BListary%5D%20CapsLock%20Multi-State%20Launcher/Hotkey%20Settings.PNG)
