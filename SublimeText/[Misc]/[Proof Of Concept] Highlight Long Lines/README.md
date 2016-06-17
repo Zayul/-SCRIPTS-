@@ -13,34 +13,58 @@ Save the following script @:
 
 &nbsp;
 
-<!-- language: lang-python -->
+```python
+import sublime, sublime_plugin
 
-	import sublime, sublime_plugin
-
-	class highlight_long_lines( sublime_plugin.EventListener ):
-		def on_modified_async( self, view ):
-
+class highlight_long_lines( sublime_plugin.EventListener ):
+	def on_modified_async( self, view ):
 
 
-			#▒▒▒  Settings  ▒▒▒#
-			maxLength = 80
-			scope     = "Invalid"
+		#▒▒▒▒▒▒▒▒  Settings  ▒▒▒▒▒▒▒▒#
+		maxLength           = 80
+		scope               = "Invalid"
+		firstCharacter_Only = False
 
 
 
-			invalidRegions = []
+		view.erase_regions( "LongLines" )
 
-			document = sublime.Region( 0, view.size() )
-			lines    = view.lines( document )
+		indentationSize     = view.settings().get( "tab_size" )
+		indentation_IsSpace = view.settings().get( "translate_tabs_to_spaces" )
 
-			for region in lines:
-				difference = ( region.end() - region.begin() )
-				if difference > maxLength:
-					invalidRegion = sublime.Region( region.begin() + maxLength, region.end() )
-					invalidRegions.append( invalidRegion )
+		document    = sublime.Region( 0, view.size() )
+		lineRegions = view.lines( document )
 
-			if len( invalidRegions ) > 0:
-				view.add_regions( "LongLines", invalidRegions, scope )
+		invalidRegions = []
+
+		for region in lineRegions:
+
+			text = view.substr( region )
+			text_WithoutTabs = text.expandtabs( indentationSize )
+
+			if text_WithoutTabs.isspace():
+				tabOffset = 0
+			else:
+				tabCount = text.count( "	" )
+				tabDifference = len( text_WithoutTabs ) - len( text )
+				tabOffset = tabDifference
+
+			difference = ( region.end() - region.begin() ) - tabOffset
+			if difference > maxLength:
+
+				highlightStart = region.begin() + ( maxLength - tabOffset )
+
+				if firstCharacter_Only == True:
+					highlightEnd = highlightStart + 1
+				else:
+					highlightEnd = region.end()
+
+				invalidRegion = sublime.Region( highlightStart, highlightEnd )
+				invalidRegions.append( invalidRegion )
+
+		if len( invalidRegions ) > 0:
+			view.add_regions( "LongLines", invalidRegions, scope )
+```
 
 &nbsp;
 
