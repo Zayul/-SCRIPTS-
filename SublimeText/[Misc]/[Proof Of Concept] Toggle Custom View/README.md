@@ -69,12 +69,12 @@ To execute via `Command Palette > Toggle Custom View`, add the following code @:
 &nbsp;
 
 ```json
-	[
-		{
-			"caption": "Toggle Custom View",
-			"command": "toggle_custom_view",
-		},
-	]
+[
+	{
+		"caption": "Toggle Custom View",
+		"command": "toggle_custom_view",
+	},
+]
 ```
 
 &nbsp;
@@ -89,11 +89,11 @@ To execute via <kbd>Ctrl + Super + Alt + V</kbd>, add the following code @:
 &nbsp;
 
 ```json
-	[
-		{
-			"keys": ["ctrl+super+alt+v"],
-			"command": "toggle_custom_view",
-		},
-	]
+[
+	{
+		"keys": ["ctrl+super+alt+v"],
+		"command": "toggle_custom_view",
+	},
+]
 ```
 
