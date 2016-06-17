@@ -67,7 +67,7 @@ class toggle_custom_view( sublime_plugin.TextCommand ):
 
 &nbsp;
 
-To execute via `Command Palette > Toggle Custom View`, add the following code @:  
+To execute via `Command Palette > Toggle Custom View`, save the following code @:  
 `/Packages/Toggle Custom View/Default.sublime-commands`
 
 &nbsp;
@@ -87,7 +87,7 @@ To execute via `Command Palette > Toggle Custom View`, add the following code @:
 
 &nbsp;
 
-To execute via <kbd>Ctrl + Super + Alt + V</kbd>, add the following code @:  
+To execute via <kbd>Ctrl + Super + Alt + V</kbd>, save the following code @:  
 `/Packages/Toggle Custom View/Default.sublime-keymap`
 
 &nbsp;
