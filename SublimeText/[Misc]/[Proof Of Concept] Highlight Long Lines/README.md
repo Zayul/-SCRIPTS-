@@ -39,18 +39,18 @@ class highlight_long_lines( sublime_plugin.EventListener ):
 
 		for region in lineRegions:
 
-			text = view.substr( region )
+			text             = view.substr( region )
 			text_WithoutTabs = text.expandtabs( indentationSize )
 
 			if text_WithoutTabs.isspace():
 				tabOffset = 0
 			else:
-				tabCount = text.count( "	" )
+				tabCount      = text.count( "	" )
 				tabDifference = len( text_WithoutTabs ) - len( text )
-				tabOffset = tabDifference
+				tabOffset     = tabDifference
 
-			difference = ( region.end() - region.begin() ) - tabOffset
-			if difference > maxLength:
+			lineLength = ( region.end() - region.begin() ) - tabOffset
+			if lineLength > maxLength:
 
 				highlightStart = region.begin() + ( maxLength - tabOffset )
 
