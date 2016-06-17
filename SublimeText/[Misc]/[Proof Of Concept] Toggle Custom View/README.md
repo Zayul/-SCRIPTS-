@@ -1,3 +1,5 @@
+Written in response to this [**StackOverflow Question**](http://stackoverflow.com/questions/37865230/changing-editing-mode-in-sublime-text-3-toggle-multiple-settings-with-a-command) asking how to toggle a custom set of view settings.
+
 ![Demo](http://i.stack.imgur.com/C6GRe.gif)
 
 -----
