@@ -16,8 +16,8 @@ void draw() {
 
   HEX_Color blue   = new HEX_Color( "#00F" );                      // RGB
   HEX_Color green  = new HEX_Color( "#00FF00" );                   // RRGGBB
-  HEX_Color red_88 = new HEX_Color( "#88FF0000" );                 // ARGB
-  HEX_Color red_44 = new HEX_Color( "#FF000044", HEX_Color.RGBA ); // RGBA
+  HEX_Color red_88 = new HEX_Color( "#88FF0000" );                 // AARRGGBB
+  HEX_Color red_44 = new HEX_Color( "#FF000044", HEX_Color.RGBA ); // RRGGBBAA
 
   fill(blue.R, blue.G, blue.B);
   rect(x, y, w + (w/2), h);
