@@ -1,0 +1,11 @@
+<snippet>
+
+<tabTrigger>Timeout.set</tabTrigger>
+<description>[Java] Timeout.set</description>
+<scope>source.java</scope>
+
+<content><![CDATA[
+Timeout.set( () -> ${1:${SELECTION/^$/__FUNCTION__/}}, ${2:__INTEGER__Delay_InMilliseconds__} );
+]]></content>
+
+</snippet>
