@@ -20,9 +20,14 @@ public class HEX_Color{
   private void initialize(){
     value = value.replaceAll("[#]", "");
     if (value.length() == 3){
-      R = Integer.valueOf( value.substring(0, 1), 16 ) * 255;
-      G = Integer.valueOf( value.substring(1, 2), 16 ) * 255;
-      B = Integer.valueOf( value.substring(2, 3), 16 ) * 255;
+      String rrggbb_Value = "";
+      rrggbb_Value += ( value.substring(0,1) + value.substring(0,1) );
+      rrggbb_Value += ( value.substring(1,2) + value.substring(1,2) );
+      rrggbb_Value += ( value.substring(2,3) + value.substring(2,3) );
+      value = rrggbb_Value;
+      R = Integer.valueOf( value.substring(0, 1), 16 );
+      G = Integer.valueOf( value.substring(1, 2), 16 );
+      B = Integer.valueOf( value.substring(2, 3), 16 );
       A = 255;
     }
     else if (value.length() == 6){
